@@ -9,6 +9,7 @@ import 'package:hangman/src/hangman/hangman_game.dart';
   styleUrls: ['hangman_component.css'],
   templateUrl: 'hangman_component.html',
   directives: [
+    MaterialButtonComponent,
     NgFor,
   ],
   providers: []

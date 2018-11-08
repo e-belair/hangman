@@ -3,10 +3,10 @@
     <img class="gallows" src="{{gallowsImage}}" />
     <div class="word">{{word}}</div>
     <div class="letters">
-        <button *ngFor="let letter of letters; let i=index"
+        <material-button raised *ngFor="let letter of letters; let i=index"
                 [disabled]="hangmanGame.lettersGuessed.contains(letter)"
                 (click)="hangmanGame.guessLetter(letter)"
-                class="letter-btn">{{letter}}</button>
+                class="blue">{{letter}}</material-button>
     </div>
-    <button class="new-game" (click)="newGame()">New Game</button>
+    <material-button raised (click)="newGame()">New Game</material-button>
 </div>
